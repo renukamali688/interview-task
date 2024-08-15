@@ -1,0 +1,17 @@
+
+<app-chiled [Data]="inputData"></app-chiled>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-3">
+            <h1 class="alert alert-primary">Parent Component</h1>
+            <h3>Data send to chiled:</h3>
+            <div>
+                <input type="text" class="form-control" #inputValue placeholder="Enter some data">
+                <button (click)="sendData(inputValue.value)" class="btn btn-success mt-3">Pass Data</button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+  
